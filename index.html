@@ -38,7 +38,7 @@
 <body class="manrope">
     
     
-    <header class="mx-auto md:px-16 lg:px-28 ">
+    <header class="mx-auto px-6 md:px-16 lg:px-28 ">
 
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -72,17 +72,18 @@
                 </ul>
               </div> -->
             </div>
-            <div class="navbar-center md:hidden">
+            <div class="navbar-center hidden lg:block">
                 <ul class="menu flex flex-col lg:flex-row items-center justify-center px-1 pt-8">
-                    <li><a class="text-black px-9">Home</a></li>
-                    <li><a class="text-gray-500 px-9">Services</a></li>
-                    <li><a class="text-gray-500 px-9">Portfolio</a></li>
-                    <li><a class="text-gray-500 px-9">Blogs</a></li>
-                    <li><a class="text-gray-500 px-9">Contact Us</a></li>
+                    <li><a class="text-black px-6">Home</a></li>
+                    <li><a class="text-gray-500 px-6">Services</a></li>
+                    <li><a class="text-gray-500 px-6">Portfolio</a></li>
+                    <li><a class="text-gray-500 px-6">Blogs</a></li>
+                    <li><a class="text-gray-500 px-6">Contact Us</a></li>
                   </ul>
             </div>
-            <div class="navbar-end">
-              <button class="btn btn-ghost btn-circle">
+            <div class="navbar-end 
+            ">
+              <button class="btn btn-ghost btn-circle hidden lg:block">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -97,14 +98,17 @@
                 </svg>
               </button>
             
-                <div>
+                <div class="hidden lg:block">
                 <i class="fa-solid fa-cart-shopping"></i>
                   <!-- <span class="badge badge-xs badge-primary indicator-item"></span> -->
                 </div>
               
-                 <button>
-                    
-                 </button>
+                 <div class="px-4 hidden lg:block ">
+                    <button class="btn btn-secondary mt-4 bg-green-500 rounded-3xl text-black">Book Consult<i class="fa-solid fa-circle-arrow-right -rotate-45 text-xl rounded-lg"></i></button>
+                 </div>
+                 <div class=" lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
 
             </div>
           </div>
@@ -120,7 +124,7 @@
             <div class=" text-center">
             <button class=" btn btn-secondary mt-4 bg-green-400 rounded-3xl text-black">View Details<i class="fa-solid fa-circle-arrow-right -rotate-45 text-xl rounded-lg"></i></button>
         </div>
-           </div>
+           </div> 
 
 
     </header>
@@ -174,7 +178,7 @@
           </div>
 
           <!-- How we works -->
-           <div class="mx-auto md:px-16 lg:px-28">
+           <div class="mx-auto px-7 md:px-16 lg:px-28">
             <div class="text-center">
             <button class="btn btn-primary bg-white text-black rounded-3xl px-4 mt-8 mb-3"><i class="fa-solid fa-arrow-right"></i>How We Works</button>
             
@@ -226,7 +230,7 @@
                   </div>
 
                   <!-- fourth card -->
-                  <div class="card glass bg-blue-200">
+                  <div class="card glass bg-blue-200 ">
                     <!-- <figure class="justify-start"> -->
                         <div class="pl-5 pt-4">
                       <img class=""
@@ -244,7 +248,9 @@
           </div>
     
         </section>
+
         <!-- challenge part -->
+
          <section class="mx-auto w-11/12 md:px-16 lg:px-28 py-20">
             <div class="text-center pt-8 ">
                 <button class="btn btn-primary  bg-green-500 text-black rounded-3xl px-4"><i class="fa-solid fa-arrow-right"></i> Explore our Latest Works</button>
@@ -252,9 +258,10 @@
                 <p class="text-gray-500 py-5 text-xl pt-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- gallery section -->
-            <div class="grid sm: grid-cols-1 lg:grid-cols-4 gap-1">
+
+            <div class="grid grid-cols-12 gap-2">
                 <!-- first row -->
-                 <div class="col-span-3">
+                 <div class="col-span-12 sm:col-span-8 gap-2">
                     <div class="card lg:card-side bg-base-100 shadow-xl mt-3 w-full">
                         <figure>
                           <img class="mx-auto px-4"
@@ -272,19 +279,20 @@
                       </div> 
                  </div>
 
-                  
-                         <div>
+                  <!-- 1st row second image -->
+                         <div class="col-span-12 sm:col-span-4">
                             <img class="w-full h-full" src="./assets/img2.png" alt="album">
                           </div>
             </div>
                  <!-- second row -->
-                <div class=" grid sm:grid-cols-1 lg:grid-cols-4 gap-4">
-                    <div class="col-span-1">
+
+                <div class=" grid grid-cols-12 gap-2 p-2">
+                    <div class="col-span-12 sm:col-span-3 gap-2">
                         <img class="h-full w-full" src="./assets/img3.png" alt="">
                     </div>
-
-                    <div class="col-span-2">
-                        <div class="card lg:card-side bg-base-100 shadow-xl mt-3 w-full">
+           <!-- second row second image -->
+                    <div class="col-span-12 sm:col-span-6 gap-2">
+                        <div class="card lg:card-side bg-base-100 shadow-xl mt-3 w-full"> 
                             <figure>
                               <img class="mx-auto px-4"
                                 src="./assets/img4.png"
@@ -300,7 +308,8 @@
                             </div>
                     </div>
                 </div>
-                    <div class="colspan-1">
+
+                    <div class="colspan-12 sm:col-span-3 gap-2 p-2">
                         <img class="w-full h-full" src="./assets/img5.png" alt="album">
                     </div>
               </div>
